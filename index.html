@@ -1,109 +1,42 @@
-<!DCOTYPE html>
-<html>
-    <head>
-        <html lang="pt-br">
-        <meta charset = "UTF-8">
-        <title>Quiz Biologia</title>
-    </head>
-    <body>
-        <h1>Quiz Biologia</h1>
-        <p>Um quiz sobre Biologia, veja quantas perguntas você pode acertar</p>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <!--Titulo da página de login-->
+        <div id = "container-titulo-login">
+            <!--Titulo-->
+            <h1>Login de usuário</h1>
+            <!--sub-titulo (talvez eu ainda deixe a fonte maior)-->
+            <p>Bem vindo a página de login</p>
+        </div>
+    </header>
 
-        <!--Login do usuário-->
-        <section>
-                <h2>Login de usuário</h2>
-                <p>Digite seu nome</p>
+    <main>
+        <div id = "container-form-login">
+            <!--Login agora em si para a página do quiz-->
+            <section>
                 <form>
-                    <input type="text" value = "" id = "log_usu" name = "log" placeholder = "Digite seu nome...">
+                    <!--Campo (input) para o usuário digitar o nome com o type text-->
+                    <h3>Nome</h3>
+                    <input type="text" id = "input-nome-usuario" placeholder = "Digite seu nome...">
+                    <label for="input-nome-usuario"></label>
+                    <!--Campo (input) para o usuário digitar o email com o type email-->
+                    <h3>Email</h3>
+                    <input type="email" id = "input-email-usuario" placeholder = "Digite seu email...">
+                    <label for="input-email-usuario"></label><br><br>
+                    <input type="submit" id = "input-submit-usuario" value="Enviar">
+                    <label for="input-submit-usuario"></label>
+                    <input type="reset" id = "input-reset-usuario" value="Limpar">
+                    <label for="input-reset-usuario"></label>
                 </form>
-                <p>Digite sua data de nascimento</p>
-                <form>
-                    <input type="date" value = "" id = "dat_usu" name = "dat">
-                </form>
-                <p>Digite sua senha</p>
-                <form>
-                    <input type="password" value = "" id = "sen_usu" name = "sen" placeholder = "Digite sua senha...">
-                </form>
-        </section>
+            </section>
+        </div>
 
-        <!--Pergunta 1:-->
-        <section>
-            <h2>Pergunta 1</h2>
-            <p>Qual <em>organela celular</em> é responsável por converter a energia luminosa em energia química durante o processo de <strong>fotossíntese</strong>?</p>
-            <form>
-                <input type = "radio" value = "Mitocôndria" id = "pg101" name = "p1">
-                <label for="pg101">Mitocôndria</label>
-                <input type = "radio" value = "Ribossomo" id = "pg102" name = "p1">
-                <label for = "pg102">Ribossomo</label>
-                <input type="radio" value = "Lisossomo" id = "pg103" name = "p1">
-                <label for="pg103">Lisossomo</label>
-                <input type="radio" value = "Cloroplasto" id = "pg104" name = "p1">
-                <label for="pg104">Cloroplasto</label>
-                <input type="radio" value = "R.E.G" id = "pg105" name = "p1">
-                <label for="pg105"><abbr title="Reticulo endoplasmático rugoso">R.E.G</abbr></label>
-            </form>
-        </section>
-
-        <!--Pergunta 2:-->
-        <section>
-            <h2>Pergunta 2</h2>
-            <p>O <em>coração humano</em> é um órgão muscular que bombeia sangue para o corpo. Em qual <strong>sistema do corpo</strong> ele se encontra?</p>
-            <form>
-                <input type="text" value = "" id = "p200" name = p2 placeholder = "Resposta...">
-            </form>
-        </section>
-
-        <!--Pergunta 3:-->
-        <section>
-            <h2>Pergunta 3</h2>
-            <p>Quais desses elementos quimicos da tabela periodica estão na primeira coluna ou coluna 1A?</p>
-            <form>
-                <input type="checkbox" value = "O"  id = "pg301" name = "p3" >
-                <label for="pg301"><abbr title="Oxigênio">O</abbr></label>
-                <input type="checkbox" value = "H" id = "pg302" name = "p3">
-                <label for="pg301"><abbr title="Hidrogênio">H</abbr></label>
-                <input type="checkbox" value = "Cu" id = "pg303" name = p3>
-                <label for="pg303"><abbr title="Cobre">Cu</abbr></label>
-                <input type="checkbox" value = "Fr" id = "pg304" name = "p3">
-                <label for="pg304"><abbr title="Frâncio">Fr</abbr></label>
-                <input type="checkbox" value = "Na" id = "pg305" name = "p3">
-                <label for="pg305"><abbr title="Sódio">Na</abbr></label>
-            </form> 
-        </section>
-
-        <!--pergunta 4:-->
-        <section>
-            <h2>Pergunta 4</h2>
-            <p>Crie um arquivo <strong>.txt</strong> no bloco de notas com o nome "Biologia" e faça o adicione aqui</p>
-            <form>
-                <input type="file" value = "" id = "pg400" name = "p4">
-            </form>
-        </section>
-
-        <!--pergunta 5:-->
-        <section>
-            <h2>Pergunta 5</h2>
-            <p>Que orgão do corpo humano é esse?</p>
-            <img src = "https://img.freepik.com/vetores-premium/ilustracao-vetorial-de-cerebro-fofo-sorridente_857384-29.jpg" alt = "Orgão do corpo humano" width = "150">
-            <form>
-                <input type="radio" value = "coração" id = "p501" name = "p5">
-                <label for="p501">coração</label>
-                <input type="radio" value = "Pulmão" id = "p502" name = "p5">
-                <label for="p502">Pulmão</label>
-                <input type="radio" value = "cérebro" id = "p503" name = "p5">
-                <label for="p503">cérebro</label>
-                 <input type="radio" value = "figado" id = "p504" name = "p5">
-                <label for="p503">figado</label>
-                <input type="radio" value = "estomago" id = "p505" name = "p5">
-                <label for="p503">estomago</label>
-            </form>
-        </section>
-
-        <!--Fim do quiz-->
-        <section>
-            <h2>Fim do quiz!</h2>
-            <p>Clique no link abaixo para ver as respostas</p>
-            <a href="index2.html">Respostas do quiz</a>
-        </section>
-    </body>
+    </main>
+</body>
 </html>
